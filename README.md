@@ -1,9 +1,14 @@
 # ChiralityMisunderstanding
 Investigation on procedure of Transformer learning chemical structure. 
 
-# Note
-This repository is under construction and will be officially released by [Mizuno group](https://github.com/mizuno-group).  
-Please contact tadahaya[at]gmail.com before publishing your paper using the contents of this repository.  
+## Publication
+- peer-reviewed publication  
+    - Not yet  
+- [preprint](https://arxiv.org/abs/2303.11593)  
+
+## Citation
+Please cite the following if you use any contents of this repository.  
+- Not yet  
 
 ## Authors
 - [Yasuhiro Yoshikai](https://github.com/yyoshikai)  
