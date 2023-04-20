@@ -15,4 +15,4 @@ Please contact tadahaya[at]gmail.com before publishing your paper using the cont
 If you have any questions or comments, please feel free to create an issue on github here, or email us:  
 - yyoshikai12@gmail.com
 - tadahaya[at]gmail.com  
-- tadahaya[at]mol.f.u-tokyo.ac.jp  
+    - lead contact  
