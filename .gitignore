@@ -1,0 +1,7 @@
+/training_results
+/data/*
+!/data/example_data.csv
+!/data/smiles_vocabulary.txt
+/*/__pycache__/
+/*/*/__pycache__
+/weights
