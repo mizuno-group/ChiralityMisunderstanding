@@ -8,14 +8,16 @@ The following packages are required. Note that the latest versions have now poss
 - numpy>=1.19.2
 - pandas>=1.2.5
 - tqdm>=4.51.0
+- rdkit==2021.09
 - PyTorch  
     Version 1.8 was used for most of the experiments, but 1.10 was used for the model with pre-LN structure. Either version works for our codes unless pre-LN is adopted.
 
-You can build a conda environment using [requirements.txt](requirements.txt) except PyTorch like following commands. For PyTorch package, please install the proper version according to your GPU environment.
+You can build a conda environment using [requirements.txt](requirements.txt) except PyTorch and rdkit like the following commands. For PyTorch package, please install the proper version according to your GPU environment.
 ```sh
 conda create -n chirality python==3.8
 conda activate chirality
 conda install pip
+conda install -c conda-forge rdkit=2021.09
 pip install -r requirements.txt
 ```
 Setting environment variable ```PROJECT_DIR``` is recommended.
