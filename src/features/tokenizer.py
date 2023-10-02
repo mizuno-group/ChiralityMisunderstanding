@@ -1,14 +1,29 @@
+
+def load_tokenizer(vocabulary_file):
+    with open(vocabulary_file, 'r') as f:
+        vocabulary = f.read().splitlines()
+    tokenizer = Tokenizer(vocabulary)
+    return tokenizer
+
 class Tokenizer:
-    def __init__(self, tok2voc, pad_token, start_token, end_token, unk_token, max_token_len):
-        self.tok2voc = tok2voc
+    def __init__(self, vocabulary):
+        """
+        Parameters
+        ----------
+        vocabulary: array_like of str
+            List of words to recognize.
+        
+        
+        """
+        self.tok2voc = ['<pad>', '<start>', '<pad>', '<unk>'] + list(vocabulary)
         self.voc2tok = {}
-        for tok, voc in enumerate(tok2voc):
+        for tok, voc in enumerate(vocabulary, 4):
             self.voc2tok[voc] = tok
-        self.pad_token = pad_token
-        self.start_token = start_token
-        self.end_token = end_token
-        self.unk_token = unk_token
-        self.max_token_len = max_token_len
+        self.pad_token = 0
+        self.start_token = 1
+        self.end_token = 2
+        self.unk_token = 3
+        self.max_token_len = max([len(voc) for voc in vocabulary])
     def tokenize(self, sentence):
         """
         Parameters
@@ -44,11 +59,15 @@ class Tokenizer:
             detokenized sentence.
         """
         sentence = ""
-        for tok in toks:
+        if toks[0] != self.start_token:
+            raise ValueError(f"Invalid token sequence: First token is not <start>.")
+        for tok in toks[1:]:
             if tok == self.end_token:
                 break
             elif tok != self.start_token:
                 sentence += self.tok2voc[tok]
+            else:
+                raise ValueError(f"Start token appeared inside the sequence.")
         return sentence
 
     def n_tok(self):

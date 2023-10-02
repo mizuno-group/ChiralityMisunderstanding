@@ -1,23 +1,24 @@
-# ChiralityMisunderstanding
+# How does Transformer model evolve to learn diverse chemical structres?
 Investigation on procedure of Transformer learning chemical structure. 
 
 ## Publication
-- peer-reviewed publication  
-    - Not yet  
-- [preprint](https://arxiv.org/abs/2303.11593)  
+- [preprint](https://arxiv.org/pdf/2303.11593)
 
 ## Citation
-Please cite the following if you use any contents of this repository.  
-- Not yet  
+(This section will be written after publication)
 
 ## Authors
 - [Yasuhiro Yoshikai](https://github.com/yyoshikai)  
     - main contributor  
 - [Tadahaya Mizuno](https://github.com/tadahayamiz)  
     - correspondence  
+- [Shumpei Nemoto](https://github.com/Nemoto-S)
+
+## How to use
+For how to build an environment and use our codes, see [usage.md](usage.md)
 
 ## Contact
 If you have any questions or comments, please feel free to create an issue on github here, or email us:  
-- yyoshikai12@gmail.com
+- yyoshikai12[at]gmail.com
 - tadahaya[at]gmail.com  
-    - lead contact  
+- tadahaya[at]mol.f.u-tokyo.ac.jp  
