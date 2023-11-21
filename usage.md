@@ -1,8 +1,8 @@
-# How does Transformer model evolve to learn diverse chemical structres?
+# The learning process of Transformer architectures for chemical structures shows inherent problems for chirality recognition
 Investigation on procedure of Transformer learning chemical structure.   
 This document describes the codes used in the experiments and how to replicate them.
 
-## Environments
+## Environment
 The following packages are required. Note that the latest versions have now possibly become incompatible with our codes, and older versions within these ranges may work.
 - python>=3.8
 - numpy>=1.19.2

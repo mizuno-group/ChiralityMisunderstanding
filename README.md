@@ -1,4 +1,4 @@
-# How does Transformer model evolve to learn diverse chemical structres?
+# The learning process of Transformer architectures for chemical structures shows inherent problems for chirality recognition
 Investigation on procedure of Transformer learning chemical structure. 
 
 ## Publication
