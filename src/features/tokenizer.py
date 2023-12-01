@@ -7,7 +7,7 @@ def load_tokenizer(vocabulary_file):
 
 class Tokenizer:
     def __init__(self, vocabulary):
-        """
+        """ あｒ
         Parameters
         ----------
         vocabulary: array_like of str
@@ -15,7 +15,7 @@ class Tokenizer:
         
         
         """
-        self.tok2voc = ['<pad>', '<start>', '<pad>', '<unk>'] + list(vocabulary)
+        self.tok2voc = ['<pad>', '<start>', '<end>', '<unk>'] + list(vocabulary)
         self.voc2tok = {}
         for tok, voc in enumerate(vocabulary, 4):
             self.voc2tok[voc] = tok
