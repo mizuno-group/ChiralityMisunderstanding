@@ -1,4 +1,4 @@
-# The learning process of Transformer architectures for chemical structures shows inherent problems for chirality recognition
+# Difficulty in chirality recognition for Transformer architectures learning chemical structures from string representations
 Investigation on procedure of Transformer learning chemical structure. 
 
 ## Publication
