@@ -43,7 +43,7 @@ def main():
     with cf.ProcessPoolExecutor(max_workers=args.max_workers) as e:
         input_tokens = list(e.map(tokenizer.tokenize, df[args.input_col].values, chunksize=10000))
     with cf.ProcessPoolExecutor(max_workers=args.max_workers) as e:
-        target_tokens = list(e.map(tokenizer.tokenize, df[args.input_col].values, chunksize=10000))
+        target_tokens = list(e.map(tokenizer.tokenize, df[args.target_col].values, chunksize=10000))
     buckets = MakeBuckets([input_tokens, target_tokens], tokenizer.pad_token,  datas=[np.arange(len(df))], min_len=10,
         max_len=120, min_bucket_step=10, min_n_token=500, residue='include')
     buckets.shuffle_batch(n_tokens=12500, n_epoch=1)
@@ -84,7 +84,7 @@ def main():
         indices = np.concatenate(indices, axis=0)
         with open(args.output, 'w') as f:
             f.write('prediction\n')
-            for idx in indices:
+            for idx in np.argsort(indices):
                 f.write(tokenizer.detokenize(preds[idx]))
                 f.write('\n')
 
