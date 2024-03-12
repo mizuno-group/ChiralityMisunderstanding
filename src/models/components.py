@@ -1,6 +1,6 @@
 """
 We partly used implementation of Transformer and other modules in
-A. M. Rush, "The Annotated Transformer", Proceedings ofWorkshop for NLP Open Source Software, pp. 52-60, 2018.
+A. M. Rush, "The Annotated Transformer", Proceedings of Workshop for NLP Open Source Software, pp. 52-60, 2018.
 """
 
 import torch
