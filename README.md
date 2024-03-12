@@ -5,7 +5,8 @@ Investigation on procedure of Transformer learning chemical structure.
 - [preprint](https://arxiv.org/pdf/2303.11593)
 
 ## Citation
-(This section will be written after publication)
+(This section will be written after publication)  
+We used Transformer implementation in [1].
 
 ## Authors
 - [Yasuhiro Yoshikai](https://github.com/yyoshikai)  
@@ -22,3 +23,5 @@ If you have any questions or comments, please feel free to create an issue on gi
 - yyoshikai12[at]gmail.com
 - tadahaya[at]gmail.com  
 - tadahaya[at]mol.f.u-tokyo.ac.jp  
+
+## Citation
