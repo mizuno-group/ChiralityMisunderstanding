@@ -39,7 +39,7 @@ python experiments/training.py --studyname example --train_file data/example --v
 ```
 
 ## Trained model weights
-Model weights trained in several conditions are in [Google Drive](https://drive.google.com/open?id=1cIWMADP4YRfHDqZNWR3mgBHW87IrRrR6&usp=drive_fs). Currently, the following models are available:
+Model weights trained in several conditions are in [Google Drive](https://drive.google.com/open?id=1cIWMADP4YRfHDqZNWR3mgBHW87IrRrR6). Currently, the following models are available:
 - no_stagnation.pth: Fully trained model (step 80,000) in training where stagnation did not occur.
 - stagnation.pth: Fully trained model (step 80,000) in training where stagnation occurred.
 - preln.pth: Fully trained model (step 80,000) with pre-LN structure.
