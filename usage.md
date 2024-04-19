@@ -39,13 +39,13 @@ python experiments/training.py --studyname example --train_file data/example --v
 ```
 
 ## Trained model weights
-Model weights trained in several conditions is in ```./weights``` directory. Currently, the following models are available:
+Model weights trained in several conditions are in [Google Drive](https://drive.google.com/open?id=1cIWMADP4YRfHDqZNWR3mgBHW87IrRrR6&usp=drive_fs). Currently, the following models are available:
 - no_stagnation.pth: Fully trained model (step 80,000) in training where stagnation did not occur.
 - stagnation.pth: Fully trained model (step 80,000) in training where stagnation occurred.
 - preln.pth: Fully trained model (step 80,000) with pre-LN structure.
 
 ## Evaluation
-Perfect / partial accuracy of translation by the model you trained or downloaded can be calculated for any SMILES data you have. Predicted SMILES can also be stored.
+Perfect/partial accuracy of translation by the model you trained or downloaded can be calculated for any SMILES data you have. Predicted SMILES can also be stored.
 ```sh
 python experiments/evaluate.py --model_file weights/no_stagnation.pth --smiles data/example_data.csv --input_col random --target_col canonical --output data/prediction_example.csv
 ```
